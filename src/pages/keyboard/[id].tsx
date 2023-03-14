@@ -11,7 +11,7 @@ export default function Gallery() {
   useEffect(() => {
     async function fetchData() {
       if (typeof id === "string") {
-        const photoData = await getKeyboardImages(id);
+        const photoData = await getKeyboardImages();
         setPhoto(photoData);
       }
     }

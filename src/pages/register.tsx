@@ -32,7 +32,7 @@ export default function RegisterPage() {
   renderCount += 1;
 
   return (
-    <div className="flex flex-wrap w-full">
+    <div className="flex flex-wrap my-20">
       <div className="flex flex-col w-full md:w-1/2">
         {/* <div className="flex justify-center pt-12 md:justify-start md:pl-12 md:-mb-24">
             <a href="#" className="p-4 text-xl font-bold text-white bg-black">
@@ -121,6 +121,7 @@ export default function RegisterPage() {
               src="/assets/keyb.jpg"
               width={"3000"}
               height={"2000"}
+              className="rounded-lg"
             />
       </div>
     </div>

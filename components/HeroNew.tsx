@@ -70,14 +70,14 @@ const HeroNew = ({ heading, message }: Herotype) => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="absolute top-0 left-0 right-0 bottom-0 bg-white/20 z-[2]"
+          className="absolute bg-white/20 z-[2]"
         />
         <motion.div
           variants={staggerContainer(1, 0.8)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="w-1/2 p-5 text-[#3C6255] z-[2] mt-[-10rem] bg-gradient-to-r from-white/40 to-white/60 rounded-lg"
+          className="w-full lg:w-1/2 md:w-1/2 p-5 text-[#3C6255] z-[2] mt-[-10rem] bg-gradient-to-r from-white/40 to-white/60 rounded-lg"
         >
           <motion.h1
             variants={textVariant(1)}
@@ -88,7 +88,7 @@ const HeroNew = ({ heading, message }: Herotype) => {
           <motion.p variants={textVariant(1.1)} className="py-5 text-xl ">
             {message}
           </motion.p>
-          <RedButton title="Check Out Now!" url="/"/>
+          <RedButton title="Check Out Now!" url="/orderpage"/>
         </motion.div>
       </div>
     </motion.div>

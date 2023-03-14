@@ -40,15 +40,15 @@ const Gallery = () => {
   }
   const displayedImages = images.slice(0, numToShow);
   return (
-    <div className="flex flex-wrap">
-      <div className="w-full flex flex-col justify-center items-center py-8">
+     <section id="Gallery" className="flex flex-col h-full">
+      <div className="flex flex-col justify-center items-center py-8">
         <h1 className="text-3xl font-bold mb-4">
           Here's some keyboard inspiration
         </h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
   
-      <div className="flex flex-wrap w-full">
+      <div className="flex flex-wrap flex-grow">
         {displayedImages.map((image, index) => (
           <div key={index} className="w-1/3 h-1/3 xl:p-1 lg:p-1 md:p-1 sm:p-1 p-0">
             <div className="h-full w-full">
@@ -74,7 +74,8 @@ const Gallery = () => {
           </button>
         </div>
       )}
-    </div>
+    
+    </section>
   );
   
 }

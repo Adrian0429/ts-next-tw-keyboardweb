@@ -34,9 +34,9 @@ export default function OrderHukForm() {
     <section>
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-          <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+          <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full my-4">
             <Image
-              alt="jisoo"
+              alt="jsoo"
               src="/assets/jisokeyb.jpg"
               width={"4000"}
               height={"3000"}
@@ -63,7 +63,7 @@ export default function OrderHukForm() {
 
       <div
         id="forms"
-        className="w-full h-full flex justify-center items-center bg-[url('/assets/sideshot.jpg')] bg-cover bg-center bg-no-repeat p-8"
+        className="w-full h-full flex justify-center items-center bg-[url('/assets/KeybDc2.jpg')] bg-cover bg-center bg-no-repeat p-8"
       >
         <div className="w-1/2 shadow-lg rounded-md bg-white/60 p-8 flex flex-col justify-start">
           <h2 className="text-center font-semibold text-2xl mb-4 uppercase">

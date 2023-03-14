@@ -4,23 +4,40 @@ import Link from "next/link"
 const Footer = () => {
     return (
         
-<footer className="bg-white dark:bg-gray-800 w-full py-8">
+<footer className="bg-white dark:bg-gray-800 w-full py-8 mt-20">
     <div className="max-w-screen-xl px-4 mx-auto">
         <ul className="flex flex-wrap justify-between max-w-screen-md mx-auto text-lg font-light">
             <li className="my-2">
-                <Link className="text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200" href="#">
-                    FAQ
+                <div className="flex flex-col">
+                <Link className="text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200 pb-4" href="#">
+                    Customer Service
                 </Link>
+                <h2 className="text-sm text-gray-400 hover:text-gray-800 transition-colors duration-200 hover:cursor-pointer pb-1">Phone: 082-421232121</h2>
+                <h2 className="text-sm text-gray-400 hover:text-gray-800 transition-colors duration-200 hover:cursor-pointer pb-1">Email: hello@gmail.com</h2>
+
+                </div>
+                
             </li>
             <li className="my-2">
-                <Link className="text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200" href="#">
-                    Configuration
+                <div className="flex flex-col">
+                <Link className="text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200 pb-4" href="#">
+                    Recent News
                 </Link>
+                
+                <h2 className="text-sm text-gray-400 hover:text-gray-800 transition-colors duration-200 hover:cursor-pointer pb-1">Services</h2>
+                <h2 className="text-sm text-gray-400 hover:text-gray-800 transition-colors duration-200 hover:cursor-pointer pb-1">About Us</h2>
+                </div>
+                
             </li>
             <li className="my-2">
-                <Link className="text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200" href="#">
-                    Github
-                </Link>
+                <div className="flex flex-col">
+                <h1 className="text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200 pb-4">
+                    Links
+                </h1>
+                <Link className="text-sm text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200" href="/"> gatau kemana ini </Link>
+                </div>
+                
+                
             </li>
             <li className="my-2">
                 <Link className="text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200" href="#">

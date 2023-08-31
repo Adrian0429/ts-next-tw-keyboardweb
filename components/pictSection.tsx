@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Gallery from "@/pages/keyboard/gallery";
 
 const textVariant = (delay: number) => ({
   hidden: {
@@ -43,106 +42,73 @@ const featured = () => {
         <header className="text-center">
           <motion.h2
             variants={textVariant(0.4)}
-            className="text-xl font-bold text-gray-900 sm:text-3xl"
+            className="text-xl font-bold text-gray-900 sm:text-4xl"
           >
-            New Collection
+            My Personal Favorites
           </motion.h2>
 
           <motion.p
             variants={textVariant(0.6)}
             className="max-w-md mx-auto mt-4 text-gray-500"
           >
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
-            praesentium cumque iure dicta incidunt est ipsam, officia dolor
-            fugit natus?
+            Here's some of my favorite art that i made either for a commision or
+            just fun work
           </motion.p>
         </header>
 
-        <ul className="grid grid-cols-1 gap-6 mt-8 lg:grid-cols-3">
+        <ul className="grid grid-cols-1 gap-4 mt-8 lg:grid-cols-3">
           <li>
-            <motion.a
+            <motion.div
               variants={textVariant(0.7)}
               whileHover={{ scale: 1.05 }}
               onHoverStart={(e) => {}}
               onHoverEnd={(e) => {}}
-              href="#"
               className="relative block group"
             >
               <Image
-                src="/assets/sideview.jpg"
+                src="/assets/haewon.jpg"
                 alt=""
                 width={"3000"}
                 height={"3000"}
-                className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90"
+                className="object-scale-down w-full transition duration-500 aspect-square group-hover:opacity-90"
               />
-
-              <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
-                <h3 className="text-xl font-medium text-white ">
-                  Sleek
-                </h3>
-
-                <span className="mt-1.5 inline-block bg-gray-800 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
-                  get yours now!
-                </span>
-              </div>
-            </motion.a>
+            </motion.div>
           </li>
 
           <li>
-            <motion.a
+            <motion.div
               variants={textVariant(0.7)}
               whileHover={{ scale: 1.05 }}
               onHoverStart={(e) => {}}
               onHoverEnd={(e) => {}}
-              href="#"
               className="relative block group"
             >
               <Image
-                src="/assets/KeybDc2.jpg"
+                src="/assets/Lady.png"
                 alt=""
                 width={"3204"}
                 height={"3204"}
-                className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90"
+                className="object-scale-down w-full transition duration-500 aspect-square group-hover:opacity-90"
               />
-
-              <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
-                <h3 className="text-xl font-medium text-white">
-                  Greeners
-                </h3>
-
-                <span className="mt-1.5 inline-block bg-gray-800 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
-                  Shop Now
-                </span>
-              </div>
-            </motion.a>
+            </motion.div>
           </li>
 
           <li className="lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1">
-            <motion.a
+            <motion.div
               variants={textVariant(0.8)}
               whileHover={{ scale: 1.05 }}
               onHoverStart={(e) => {}}
               onHoverEnd={(e) => {}}
-              href="#"
               className="relative block group"
             >
               <Image
-                src="/assets/KeybDcPutih.jpg"
+                src="/assets/GojoSatoru.jpg"
                 alt=""
                 width={"3000"}
                 height={"3000"}
                 className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90"
               />
-
-              <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
-                <h3 className="text-xl font-medium text-white bg-gray-700/50 px-2 rounded">
-                  lorem ipsum
-                </h3>
-                <span className="mt-1.5 inline-block bg-gray-800 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
-                  Shop Now
-                </span>
-              </div>
-            </motion.a>
+            </motion.div>
           </li>
         </ul>
       </motion.div>

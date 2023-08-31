@@ -3,7 +3,7 @@ import Image from "next/image";
 import imageerror from "public/assets/404.jpg";
 import Link from "next/link";
 import NewNav from "components/Navbar";
-import HeroNew from "components/HeroNew";
+import HeroNew from "components/Hero";
 
 
 interface Props {}
